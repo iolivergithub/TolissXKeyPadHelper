@@ -208,22 +208,29 @@ end
 function CabinLightsOFF()
       print("[ *** ian/CabinLightsOFF]" )
 
-      cabinlights = XPLMFindDataRef( "AirbusFBW/CabinLightLevel")   
+      cabinlights = XPLMFindDataRef( "AirbusFBW/cabinLightLevel_perc")   
       XPLMSetDataf( cabinlights, 0.0 )
 end
 
 function CabinLightsTOLAND()
       print("[ *** ian/CabinLightsTOLAND]" )
 
-      cabinlights = XPLMFindDataRef( "AirbusFBW/CabinLightLevel")   
-      XPLMSetDataf( cabinlights, 0.25 )
+      cabinlights = XPLMFindDataRef( "AirbusFBW/cabinLightLevel_perc")   
+      XPLMSetDataf( cabinlights, 4.0 )
+end 
+
+function CabinLightsMED()
+      print("[ *** ian/CabinLightsMED]" )
+
+      cabinlights = XPLMFindDataRef( "AirbusFBW/cabinLightLevel_perc")   
+      XPLMSetDataf( cabinlights, 30.0 )
 end
 
 function CabinLightsON()
       print("[ *** ian/CabinLightsON]" )
 
-      cabinlights = XPLMFindDataRef( "AirbusFBW/CabinLightLevel")   
-      XPLMSetDataf( cabinlights, 1 )
+      cabinlights = XPLMFindDataRef( "AirbusFBW/cabinLightLevel_perc")   
+      XPLMSetDataf( cabinlights, 100.0 )
 end
 
 
@@ -278,9 +285,35 @@ function RapidPowerOn()
       adirusarray[0]=1
       adirusarray[1]=1
       adirusarray[2]=1      
+
+      FloodLightsBright()
+      CabinLightsMED()
 end
 
+function RapidPowerOff()
+      print("[ *** ian/RapidPowerOf]" )
 
+      fuelohparray  = dataref_table( "AirbusFBW/FuelOHPArray")
+      adirusarray  = dataref_table( "AirbusFBW/ADIRUSwitchArray")
+      crewoxy = XPLMFindDataRef( "AirbusFBW/CrewOxySwitch")   
+
+      command_once("toliss_airbus/eleccommands/Bat1Toggle")
+      command_once("toliss_airbus/eleccommands/Bat2Toggle")
+      command_once("toliss_airbus/eleccommands/ExtPowToggle")
+
+      XPLMSetDataf( crewoxy, 0 )
+      fuelohparray[0]=0
+      fuelohparray[1]=0
+      fuelohparray[2]=0
+      fuelohparray[3]=0
+      fuelohparray[4]=0
+
+      adirusarray[0]=0
+      adirusarray[1]=0
+      adirusarray[2]=0     
+
+      CabinLightsOFF() 
+end
 
 create_command("ian/PaxClose", "Close all passenger doors", "PaxDoorsClose()", "", "")
 
@@ -309,7 +342,8 @@ create_command("ian/OHPDim", "Make all display units dim", "OHPDim()", "", "")
 
 create_command("ian/CabinLightsOFF", "Make all display units bright", "CabinLightsOFF()", "", "")
 create_command("ian/CabinLightsTOLAND", "Make all display units medium brightness", "CabinLightsTOLAND()", "", "")
-create_command("ian/CabinLightsON", "Make all display units dim", "CabFBS/FBWinbLightsON()", "", "")
+create_command("ian/CabinLightsMED", "Make all display units medium brightness", "CabinLightsMED()", "", "")
+create_command("ian/CabinLightsON", "Make all display units dim", "CabinLightsON()", "", "")
 
 
 create_command("ian/FloodLightsOff", "Make all display units bright", "FloodLightsOff()", "", "")
@@ -317,6 +351,7 @@ create_command("ian/FloodLightsDim", "Make all display units medium brightness",
 create_command("ian/FloodLightsBright", "Make all display units dim", "FloodLightsBright()", "", "")
 
 create_command("ian/RapidPowerOn", "Make all display units dim", "RapidPowerOn()", "", "")
+create_command("ian/RapidPowerOff", "Make all display units dim", "RapidPowerOff()", "", "")
 
 
 
