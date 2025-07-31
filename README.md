@@ -73,7 +73,7 @@ Jetways - this calls the openSAM/toggle_jwy function. However Toliss aircraft do
 
 Cockpit lighting varies between Bright, Medium and Dim for the displayers, integral, overhead panel and flood lights. Very useful when coming into a cold and dark cockpit or just reducing the amount of light during night flying or for take-off/landing. These should be self-explanatory.
 
-Note: It seems that the FCU panel's dataref is write-only, so you still have to use the small knobs underneath this panel to affect the brightness of the FCU text and the FCU's display. I have a query with Toliss about this.
+Two additional convenience buttons are provided for suitable night lighting of the panels and for turning all panel lighting off. The display brightness is unaffected.
 
 Note: CPDLC - there is no dataref for its brightness as far as I can find. You can call the BRT/DIM rocker switch by command, but then setting the brightness is guesswork. Again, ask Toliss.
 
