@@ -155,33 +155,34 @@ function IntegralBright()
       print("[ *** ian/IntBright]" )  
 
       intbrightnesdataref = XPLMFindDataRef( "AirbusFBW/PanelBrightnessLevel")   
-      fcubrightnesdataref = XPLMFindDataRef( "AirbusFBW/FCUIntegralBrightness")   
+      --fcubrightnesdataref = XPLMFindDataRef( "AirbusFBW/FCUIntegralBrightness")   
+       fcurheostats  = dataref_table( "AirbusFBW/SupplLightLevelRehostats")
 
       XPLMSetDataf( intbrightnesdataref, 1.0 )
-      XPLMSetDataf( fcubrightnesdataref, 1.0 )
-
+      fcurheostats[0]=1.0
+      fcurheostats[1]=1.0
 end
 
 function IntegralMedium()
       print("[ *** ian/IntMed]" )
 
       intbrightnesdataref = XPLMFindDataRef( "AirbusFBW/PanelBrightnessLevel")  
-      fcubrightnesdataref = XPLMFindDataRef( "AirbusFBW/FCUIntegralBrightness")   
+       fcurheostats  = dataref_table( "AirbusFBW/SupplLightLevelRehostats")
 
       XPLMSetDataf( intbrightnesdataref, 0.5 )
-      XPLMSetDataf( fcubrightnesdataref, 0.5 )
-
+      fcurheostats[0]=0.4
+      fcurheostats[1]=0.6
 end
 
 function IntegralDim()
       print("[ *** ian/IntDim]" )
 
       intbrightnesdataref = XPLMFindDataRef( "AirbusFBW/PanelBrightnessLevel")     
-      fcubrightnesdataref = XPLMFindDataRef( "AirbusFBW/FCUIntegralBrightness")   
+       fcurheostats  = dataref_table( "AirbusFBW/SupplLightLevelRehostats")
 
       XPLMSetDataf( intbrightnesdataref, 0.1 )
-      XPLMSetDataf( fcubrightnesdataref, 0.1 )
-
+      fcurheostats[0]=0.025
+      fcurheostats[1]=0.1
 end
 
 function OHPBright()
@@ -202,7 +203,7 @@ function OHPDim()
       print("[ *** ian/OHPDim]" )
 
       ohpbrightnesdataref = XPLMFindDataRef( "AirbusFBW/OHPBrightnessLevel")   
-      XPLMSetDataf( ohpbrightnesdataref, 0.1 )
+      XPLMSetDataf( ohpbrightnesdataref, 0.025 )
 end
 
 function CabinLightsOFF()
@@ -250,8 +251,8 @@ function FloodLightsDim()
       panelflood = XPLMFindDataRef( "AirbusFBW/PanelFloodBrightnessLevel")   
       pedestalflood = XPLMFindDataRef( "AirbusFBW/PedestalFloodBrightnessLevel")   
 
-      XPLMSetDataf( panelflood, 0.05 )
-      XPLMSetDataf( pedestalflood, 0.05 )
+      XPLMSetDataf( panelflood, 0.1 )
+      XPLMSetDataf( pedestalflood, 0.1 )
 end
 
 function FloodLightsBright()
@@ -262,6 +263,31 @@ function FloodLightsBright()
 
       XPLMSetDataf( panelflood, 1 )
       XPLMSetDataf( pedestalflood, 1 )
+end
+
+function BrightnessNight()
+         print("[ *** ian/BrightnessNight ]" )
+   
+     FloodLightsOff()
+     CabinLightsMED()
+     OHPDim()
+     IntegralDim()
+     DUBright()
+end
+
+function PanelLightingOff()
+         print("[ *** ian/PanelLightingOff]" )
+
+      FloodLightsOff()
+      ohpbrightnesdataref = XPLMFindDataRef( "AirbusFBW/OHPBrightnessLevel")   
+      XPLMSetDataf( ohpbrightnesdataref, 0.00 )
+      
+      intbrightnesdataref = XPLMFindDataRef( "AirbusFBW/PanelBrightnessLevel")     
+      fcurheostats  = dataref_table( "AirbusFBW/SupplLightLevelRehostats")
+
+      XPLMSetDataf( intbrightnesdataref, 0 )
+      fcurheostats[0]=0
+      fcurheostats[1]=0   
 end
 
 function RapidPowerOn()
@@ -353,6 +379,8 @@ create_command("ian/FloodLightsBright", "Make all display units dim", "FloodLigh
 create_command("ian/RapidPowerOn", "Make all display units dim", "RapidPowerOn()", "", "")
 create_command("ian/RapidPowerOff", "Make all display units dim", "RapidPowerOff()", "", "")
 
+create_command("ian/BrightnessNight", "Make all display units dim", "BrightnessNight()", "", "")
+create_command("ian/PanelLightingOff", "Make all display units dim", "PanelLightingOff()", "", "")
 
 
 end -- ToLiss only      
