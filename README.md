@@ -28,7 +28,7 @@ Tested on *my* machine only. No guarantees that it will work on yours and I'm no
 
 Similarly if you have an idea or want to contribute, write something to the Github Issues. No guarantees that I'll do something, but always open to ideas. NB: read the LICENSE file too!
 
-##
+## License
 
 Please read the LICENSE file. This software is released under GPLv3.
 
