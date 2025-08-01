@@ -32,6 +32,8 @@ Similarly if you have an idea or want to contribute, write something to the Gith
 
 Please read the LICENSE file. This software is released under GPLv3.
 
+Copyright (C)2025 Ian Oliver
+
 ## Instructions
 
 This panel has two parts, the main panel and the additional panel (there are example screenshots + a nice Toliss A3321 at the end)
