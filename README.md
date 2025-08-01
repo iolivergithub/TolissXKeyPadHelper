@@ -3,6 +3,7 @@ A simple X-KeyPad layout and lua file for some common functions in the Toliss A3
 
    * Installation
    * Disclaimer
+   * License
    * Instructions
 
 ## Installation
@@ -26,6 +27,10 @@ Start X-Plane 12.
 Tested on *my* machine only. No guarantees that it will work on yours and I'm not responsible for any damange caused directly or indirectly by these scripts nor by your actions. If you find a bug (and there might be) raise an Issue on the relevant Github page.
 
 Similarly if you have an idea or want to contribute, write something to the Github Issues. No guarantees that I'll do something, but always open to ideas. NB: read the LICENSE file too!
+
+##
+
+Please read the LICENSE file. This software is released under GPLv3.
 
 ## Instructions
 
