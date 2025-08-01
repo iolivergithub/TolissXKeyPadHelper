@@ -1,23 +1,36 @@
-print("[ *** IAN Toliss Custom Script - Version 1.1 - 28 July 2025" )
-print("[ *** IAN Toliss Custom Script - aircraft type is... ]" )
+-- TolissXKeyPadHelper
+-- Copyright (C) 2025  Ian Oliver
+
+-- This program is free software: you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation, either version 3 of the License, or
+-- (at your option) any later version.
+
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-- GNU General Public License for more details.
+
+-- You should have received a copy of the GNU General Public License
+-- along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+print("[ *** IAN TolissXKeyPadHelper - Version 1.1 - 1 August 2025" )
+print("[ *** - aircraft type is... ]" )
 print(PLANE_ICAO)
 
 -- ToLiss only
 if PLANE_ICAO == "A319" or PLANE_ICAO == "A321" or PLANE_ICAO == "A21N" 
    or PLANE_ICAO == "A20N" or PLANE_ICAO == "A346" or PLANE_ICAO == "A339" then
 
-print("[ *** IAN Toliss Custom Script loaded ]" )
+print("[ *** IAN TolissXKeyPadHelper: Script loaded for selected aircraft type ]" )
 
 -- file:///C:/Users/ian/Downloads/FlyWithLua_Manual_en-1.pdf   section 2.2.4
-local cargodoors    = dataref_table( "AirbusFBW/CargoDoorModeArray")
-local paxdoors       = dataref_table( "AirbusFBW/PaxDoorModeArray")
-local dubrightness  = dataref_table( "AirbusFBW/DUBrightness")
-
---AirbusFBW/CabinLightLevel
-
 
 function PaxDoorsClose()
-         print("[ *** Toliss Custom/PaxDoorsClose]" )
+         print("[ *** ian/PaxDoorsClose]" )
+
+         paxdoors       = dataref_table( "AirbusFBW/PaxDoorModeArray")
          paxdoors[0]=0
          paxdoors[1]=0
          paxdoors[2]=0
@@ -29,7 +42,9 @@ function PaxDoorsClose()
 end 
 
 function PaxGate1()
-         print("[ *** Toliss Custom/PaxGate1]" )
+         print("[ *** ian/PaxGate1]" )
+
+         paxdoors       = dataref_table( "AirbusFBW/PaxDoorModeArray")
          paxdoors[0]=2
          paxdoors[1]=0
          paxdoors[2]=0
@@ -41,7 +56,9 @@ function PaxGate1()
 end 
 
 function PaxGate1R()
-         print("[ *** Toliss Custom/PaxGate1R]" )
+         print("[ *** ian/PaxGate1R]" )
+
+         paxdoors       = dataref_table( "AirbusFBW/PaxDoorModeArray")
          paxdoors[0]=2
          paxdoors[1]=0
          paxdoors[2]=0
@@ -53,7 +70,9 @@ function PaxGate1R()
 end 
 
 function PaxGateAll()
-         print("[ *** Toliss Custom/PaxGateAll]" )
+         print("[ *** ian/PaxGateAll]" )
+
+         paxdoors       = dataref_table( "AirbusFBW/PaxDoorModeArray")
          paxdoors[0]=2
          paxdoors[1]=2
          paxdoors[2]=0
@@ -66,7 +85,9 @@ end
 
 
 function PaxStand1()
-         print("[ *** Toliss Custom/PaxStand1]" )
+         print("[ *** ian/PaxStand1]" )
+
+         paxdoors       = dataref_table( "AirbusFBW/PaxDoorModeArray")
          paxdoors[0]=2
          paxdoors[1]=0
          paxdoors[2]=0
@@ -78,7 +99,9 @@ function PaxStand1()
 end 
 
 function PaxStand1R()
-         print("[ *** Toliss Custom/PaxStand1R]" )
+         print("[ *** ian/PaxStand1R]" )
+
+         paxdoors       = dataref_table( "AirbusFBW/PaxDoorModeArray")
          paxdoors[0]=2
          paxdoors[1]=0
          paxdoors[2]=0
@@ -90,7 +113,9 @@ function PaxStand1R()
 end 
 
 function PaxStandAll()
-         print("[ *** Toliss Custom/PaxStandAll]" )
+         print("[ *** ian/PaxStandAll]" )
+
+         paxdoors       = dataref_table( "AirbusFBW/PaxDoorModeArray")
          paxdoors[0]=2
          paxdoors[1]=2
          paxdoors[2]=0
@@ -102,14 +127,18 @@ function PaxStandAll()
 end 
 
 function CargoDoorsOpen()
-         print("[ *** Toliss Custom/CargoDoorOpen]" )
+         print("[ *** ian/CargoDoorOpen]" )
+
+         cargodoors    = dataref_table( "AirbusFBW/CargoDoorModeArray")
          cargodoors[0]=2
          cargodoors[1]=2
          cargodoors[2]=2
 end 
 
 function CargoDoorsClose()
-         print("[ *** Toliss Custom/CargoDoorClose]" )
+         print("[ *** ian/CargoDoorClose]" )
+
+         cargodoors    = dataref_table( "AirbusFBW/CargoDoorModeArray")
          cargodoors[0]=0
          cargodoors[1]=0
          cargodoors[2]=0
@@ -117,6 +146,8 @@ end
 
 function DUBright()
          print("[ *** ian/DUBright]" )
+
+         dubrightness  = dataref_table( "AirbusFBW/DUBrightness")
          dubrightness[0]=1
          dubrightness[1]=1
          dubrightness[2]=1
@@ -129,6 +160,8 @@ end
 
 function DUMedium()
          print("[ *** ian/DUMedium]" )
+
+         dubrightness  = dataref_table( "AirbusFBW/DUBrightness")
          dubrightness[0]=0.5
          dubrightness[1]=0.5
          dubrightness[2]=0.5
@@ -141,6 +174,8 @@ end
 
 function DUDim()
          print("[ *** ian/DUDim]" )
+
+         dubrightness  = dataref_table( "AirbusFBW/DUBrightness")
          dubrightness[0]=0.2
          dubrightness[1]=0.2
          dubrightness[2]=0.2
@@ -155,7 +190,6 @@ function IntegralBright()
       print("[ *** ian/IntBright]" )  
 
       intbrightnesdataref = XPLMFindDataRef( "AirbusFBW/PanelBrightnessLevel")   
-      --fcubrightnesdataref = XPLMFindDataRef( "AirbusFBW/FCUIntegralBrightness")   
        fcurheostats  = dataref_table( "AirbusFBW/SupplLightLevelRehostats")
 
       XPLMSetDataf( intbrightnesdataref, 1.0 )
