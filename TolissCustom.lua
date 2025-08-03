@@ -1,5 +1,6 @@
 -- TolissXKeyPadHelper
 -- Copyright (C) 2025  Ian Oliver
+-- Version 1.2
 
 -- This program is free software: you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -329,48 +330,70 @@ function RapidPowerOn()
 
       fuelohparray  = dataref_table( "AirbusFBW/FuelOHPArray")
       adirusarray  = dataref_table( "AirbusFBW/ADIRUSwitchArray")
+      ohpswitches = dataref_table( "AirbusFBW/OHPLightSwitches")
       crewoxy = XPLMFindDataRef( "AirbusFBW/CrewOxySwitch")   
+      captpurs = XPLMFindDataRef( "ckpt/oh/capt/anim")
 
       command_once("toliss_airbus/eleccommands/Bat1Toggle")
       command_once("toliss_airbus/eleccommands/Bat2Toggle")
       command_once("toliss_airbus/eleccommands/ExtPowToggle")
+      command_once("toliss_airbus/lightcommands/FSBSignOn")
+      command_once("toliss_airbus/lightcommands/NSSignUp")  -- run twice to makesure Wifi is OFF
+      command_once("toliss_airbus/lightcommands/NSSignUp")
 
-      XPLMSetDataf( crewoxy, 1 )
+      XPLMSetDatai( crewoxy, 1 )
       fuelohparray[0]=1
       fuelohparray[1]=1
       fuelohparray[2]=1
       fuelohparray[3]=1
       fuelohparray[4]=1
+      fuelohparray[5]=1
+      fuelohparray[6]=1
 
       adirusarray[0]=1
       adirusarray[1]=1
       adirusarray[2]=1      
+
+      XPLMSetDatai( captpurs, 1 )
+      ohpswitches[9]=1 -- STBY Compass on
+      ohpswitches[10]=1 -- Emergency Exits arm
 
       FloodLightsBright()
       CabinLightsMED()
 end
 
 function RapidPowerOff()
-      print("[ *** ian/RapidPowerOf]" )
+      print("[ *** ian/RapidPowerOff]" )
 
       fuelohparray  = dataref_table( "AirbusFBW/FuelOHPArray")
       adirusarray  = dataref_table( "AirbusFBW/ADIRUSwitchArray")
+      ohpswitches = dataref_table( "AirbusFBW/OHPLightSwitches")
       crewoxy = XPLMFindDataRef( "AirbusFBW/CrewOxySwitch")   
+      captpurs = XPLMFindDataRef( "ckpt/oh/capt/anim")
 
       command_once("toliss_airbus/eleccommands/Bat1Toggle")
       command_once("toliss_airbus/eleccommands/Bat2Toggle")
       command_once("toliss_airbus/eleccommands/ExtPowToggle")
+      command_once("toliss_airbus/lightcommands/FSBSignOff")
+      command_once("toliss_airbus/lightcommands/NSSignUp")  -- run twice to makesure Wifi is OFF
+      command_once("toliss_airbus/lightcommands/NSSignUp")
 
-      XPLMSetDataf( crewoxy, 0 )
+      XPLMSetDatai( crewoxy, 0 )
       fuelohparray[0]=0
       fuelohparray[1]=0
       fuelohparray[2]=0
       fuelohparray[3]=0
       fuelohparray[4]=0
+      fuelohparray[5]=0
+      fuelohparray[6]=0
 
       adirusarray[0]=0
       adirusarray[1]=0
       adirusarray[2]=0     
+
+      XPLMSetDatai( captpurs, 0 )
+      ohpswitches[9]=0 -- STBY Compass off
+      ohpswitches[10]=0 -- Emergency Exits off
 
       CabinLightsOFF() 
 end
