@@ -14,7 +14,7 @@ Firstly you require:
    + XKeyPad ( v1.6.1 or better )
    + FlyWithLuaNG ( v2.8.XX NG )
 
-You now have to place the 3 files `X-Keys_a321_StdDef.jaon`, `X-Keys_a321.json` and `X-Keys_a321_StdDef.ini`  in your Toliss A321 directory, which should be in `X-Plane12\Aurcraft\TolissA321_V1p7`  (NB: the specific name ofthe TolissA321 directory does change with versions, but the lastest iv V1p7).
+You now have to place the 3 files `X-Keys_a321_StdDef.jaon`, `X-Keys_a321.json` and `X-Keys_a321_StdDef.ini`  in your Toliss A321 directory, which should be in `X-Plane12\Aircraft\TolissA321_V1p7`  (NB: the specific name ofthe TolissA321 directory does change with versions, but the lastest iv V1p7).
 
 Then place the file `TolissCustom.lua` into the FlyWithLua scripts directory which should be `X-Plane 12\Resources\plugins\FlyWithLua\Scripts`
 
@@ -49,7 +49,8 @@ This is where you'll spend most of your time. It is split into various sections.
    * Seats and "Wifi"
    * A large block corresponding to the ECAM functions
    * TCAS
-   * Predictive Wind Shear and Break Fan
+   * Predictive Wind Shear and Weather Radar
+   * Brake Fan
    * Convenience functions for passenger and cargo doors
    * Ground functions
    * ADIRU and ISCS
@@ -60,9 +61,13 @@ Seat belts and Wifi show green when they are in the most safe state, otherwise a
 
 ECAM functions are typically just grey buttons, but will turn amber if a particular function is selected. CLR and STS will turn amber under certain conditions too.
 
-TCAS button switches between On and Auto. The TCAS state below this is changed via the top and bottom half of the buttons. The text colour changes depending upon the state as a visual warning.
+TCAS button switches between On and Auto. The TCAS state below this is changed via the top and bottom half of the buttons. The text colour changes depending upon the state as a visual warning. This can select any of the 5 TCAS states from STBY through to full TA/RA
 
-The door functions are just buttons. Check the DOORS ECAM page for their current state. NB: this accesses the ISCS functionality, so even when at gate, ground vehicles might appear - I have no control over this.
+Predictive wind shear (PWS) is set to auto via the top half of the button and on by the lower half. WXRadar toggles through the three states: SYS1, SYS2 and OFF - when in Sys1 the button text is green, Sys2 in amber and Off is white. Additionally this manipulates the Multiscan and GCS switches with both of these systems being in man and off modes respectively if WXRadar is off, and both in auto mode if SYS1 or SYS2 are on.
+
+Brake fan (BRK FAN) follows the dark cockpit rule with the button being white when the fans are on, and black when off. This button is displayed in amber when the brakes are hot.
+
+The door functions are just buttons for conveniently selecting pax and cargo door states for gate and stand situations. Check the DOORS ECAM page for their current state. NB: this accesses the ISCS functionality, so even when at gate, ground vehicles might appear - I have no control over this.
 
 Ground function are bright red or black to denote their state. So ground power on and chocks applied are *red*. If you find  you plane not moving under full throttle, parking brake disengaged anda bright *red* CHOCKS illuminated, there's your answer.
 
