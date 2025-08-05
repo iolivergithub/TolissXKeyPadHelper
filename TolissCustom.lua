@@ -398,6 +398,45 @@ function RapidPowerOff()
       CabinLightsOFF() 
 end
 
+-- NB: AirbusFBW/WXPowerSwitch
+-- This takes the value  "0" when SYS 1 is on
+-- This takes the value  "1" when wx radar is off
+-- This takes the value  "2" when SYS 2 is on
+
+function WXRadarToggle()
+     print("[ *** ian/WXRadarToggle]" )
+
+      wxsys = XPLMFindDataRef( "AirbusFBW/WXPowerSwitch")
+      gcs = XPLMFindDataRef( "ckpt/ped/radar/gcs/anim")
+      multiscan = XPLMFindDataRef( "ckpt/ped/radar/manAuto/anim")
+      val = XPLMGetDatai( wxsys )
+
+      if  (val==0)                       -- sys1 on
+      then 
+          XPLMSetDatai( wxsys, 1 )   -- set to off
+          XPLMSetDatai( gcs, 0 )  
+          XPLMSetDatai( multiscan, 0 )  
+
+      elseif (val==1)                  -- if off
+      then 
+          XPLMSetDatai( wxsys, 2 )   -- set sys2
+          XPLMSetDatai( gcs, 1 )  
+          XPLMSetDatai( multiscan, 1 )  
+      elseif (val==2)                  -- if sys2 on
+      then 
+          XPLMSetDatai( wxsys, 0 )   -- set sys1
+          XPLMSetDatai( gcs, 1 )  
+          XPLMSetDatai( multiscan, 1 )  
+      else
+          XPLMSetDatai( wxsys, 1 )   -- should never get here, but if it does, then set to off (This is unreachable code)
+           print("==========================================================================")
+           print("ian/WXRadarToggle reached unreachable code. Inform the author immediately. WXRadar is set to off for Xplanes sanity!")
+           print("You should raise an issue on the github page for this immediately: https://github.com/iolivergithub/TolissXKeyPadHelper")
+           print("==========================================================================")
+      end
+end
+
+
 create_command("ian/PaxClose", "Close all passenger doors", "PaxDoorsClose()", "", "")
 
 create_command("ian/PaxGate1", "Open pax front left only for gate arrival", "PaxGate1()", "", "")
@@ -439,5 +478,6 @@ create_command("ian/RapidPowerOff", "Make all display units dim", "RapidPowerOff
 create_command("ian/BrightnessNight", "Make all display units dim", "BrightnessNight()", "", "")
 create_command("ian/PanelLightingOff", "Make all display units dim", "PanelLightingOff()", "", "")
 
+create_command("ian/WXRadarToggle", "Make all display units dim", "WXRadarToggle()", "", "")
 
 end -- ToLiss only      
