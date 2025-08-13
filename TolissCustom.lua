@@ -1,6 +1,6 @@
 -- TolissXKeyPadHelper
 -- Copyright (C) 2025  Ian Oliver
--- Version 1.2
+-- Version 1.3
 
 -- This program is free software: you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
 -- along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-print("[ *** IAN TolissXKeyPadHelper - Version 1.1 - 1 August 2025" )
+print("[ *** IAN TolissXKeyPadHelper - Version 1.2 - 5 August 2025" )
 print("[ *** - aircraft type is... ]" )
 print(PLANE_ICAO)
 
@@ -301,8 +301,27 @@ function FloodLightsBright()
 end
 
 function BrightnessNight()
-         print("[ *** ian/BrightnessNight ]" )
+     print("[ *** ian/BrightnessNight ]" )
+
+
+      command_once("toliss_airbus/lightcommands/DomeLightDown")  -- run twice to ensure dome lights off
+      command_once("toliss_airbus/lightcommands/DomeLightDown")
+
    
+     FloodLightsOff()
+     CabinLightsMED()
+     OHPDim()
+     IntegralDim()
+     DUBright()
+end
+
+function BrightnessNightDomeDim()
+     print("[ *** ian/BrightnessNightDomeDim ]" )
+
+      command_once("toliss_airbus/lightcommands/DomeLightDown")  -- run twice to ensure dome lights off
+      command_once("toliss_airbus/lightcommands/DomeLightDown")
+      command_once("toliss_airbus/lightcommands/DomeLightUp") -- and once up to ensure dome lights are dim
+
      FloodLightsOff()
      CabinLightsMED()
      OHPDim()
@@ -338,8 +357,11 @@ function RapidPowerOn()
       command_once("toliss_airbus/eleccommands/Bat2Toggle")
       command_once("toliss_airbus/eleccommands/ExtPowToggle")
       command_once("toliss_airbus/lightcommands/FSBSignOn")
-      command_once("toliss_airbus/lightcommands/NSSignUp")  -- run twice to makesure Wifi is OFF
+      command_once("toliss_airbus/lightcommands/NSSignUp")  -- run twice to make sure Wifi is OFF
       command_once("toliss_airbus/lightcommands/NSSignUp")
+
+      command_once("toliss_airbus/lightcommands/DomeLightUp") -- run twice to make sure dome is bright
+      command_once("toliss_airbus/lightcommands/DomeLightUp") 
 
       XPLMSetDatai( crewoxy, 1 )
       fuelohparray[0]=1
@@ -476,6 +498,8 @@ create_command("ian/RapidPowerOn", "Make all display units dim", "RapidPowerOn()
 create_command("ian/RapidPowerOff", "Make all display units dim", "RapidPowerOff()", "", "")
 
 create_command("ian/BrightnessNight", "Make all display units dim", "BrightnessNight()", "", "")
+create_command("ian/BrightnessNightDomeDim", "Make all display units dim", "BrightnessNightDomeDim()", "", "")
+
 create_command("ian/PanelLightingOff", "Make all display units dim", "PanelLightingOff()", "", "")
 
 create_command("ian/WXRadarToggle", "Make all display units dim", "WXRadarToggle()", "", "")
