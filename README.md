@@ -83,15 +83,13 @@ This is contains some useful convenience things. The page is accessed by clickin
 
 Jetways - this calls the openSAM/toggle_jwy function. However Toliss aircraft do not support OpenSAM's Jetways, so it doesn't work. I haven't removed it for various reasons. If it does start working, then it'll show different colours depending upon the state of the jeyway. If you know how to get this working with Toliss aircraft please let me know.
 
-Cockpit lighting varies between Bright, Medium and Dim for the displayers, integral, overhead panel and flood lights. Very useful when coming into a cold and dark cockpit or just reducing the amount of light during night flying or for take-off/landing. These should be self-explanatory.
-
-Two additional convenience buttons are provided for suitable night lighting of the panels and for turning all panel lighting off. The display brightness is unaffected.
+Cockpit lighting varies between Bright, Medium and Dim for the displays, integral, overhead panel and flood lights. Further convenience buttons are provided for night flights that make the cockpit dark or dim, and also turn off the panel lighting: very useful when coming into a cold and dark cockpit or just reducing the amount of light during night flying or for take-off/landing. The button controlling the dome is clickable with the top half making it brigher and bottom darker - it does from off, via dim to bright (and back again).
 
 Note: CPDLC - there is no dataref for its brightness as far as I can find. You can call the BRT/DIM rocker switch by command, but then setting the brightness is guesswork. Again, ask Toliss.
 
 Cabin lights - this should be self explanatory again, but basically OFF means total darkness; TO/LAND - for when the cabin crew dim the lights, then MEDIUM and ON for normal usage; the former is good for those red-eye flights. BTW, am I one of the few who like the cabin being very dim at night/evening on the real aircraft...you get a much better view out of the window.
 
-Rapid Power ON/OFF ... this is really useful for rapidly setting up the cockpit from cold & dark (OFF does the opposite). Rapid power on does a few things: it toggles the batteries (hopefully to on) and switches on the external power (assuming you have a ground power unit connected), it then turns on the crew oxygen, all the fuel pumps, standby compass, capt & purser emergency activation on, arms the emergency exits, turns on the seatbelts sign and ensures Wifi is off (formerly no-smoking), turns the ADIRUs to NAV, turns on the cockpit flood lights so you can see and finally sets the cabin lights to medium for passenger experience, safety and security. 
+Rapid Power ON/OFF ... this is really useful for rapidly setting up the cockpit from cold & dark (OFF does the opposite). Rapid power on does a few things: it toggles the batteries (hopefully to on) and switches on the external power (assuming you have a ground power unit connected), it then turns on the crew oxygen, all the fuel pumps, standby compass, capt & purser emergency activation on, arms the emergency exits, turns on the seatbelts sign and ensures Wifi is off (formerly no-smoking), turns the ADIRUs to NAV, turns on the cockpit dome and flood lights so you can see and then finally sets the cabin lights to medium for passenger experience, safety and security. 
 
 Note 1: these functions *toggle* the batteries, so if you've turned one off and one on, then you might get weird results.
 
