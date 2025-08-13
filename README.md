@@ -1,11 +1,26 @@
 # TolissXKeyPadHelper
 A simple X-KeyPad layout and lua file for some common functions in the Toliss A321 to make flying a little bit easier. Please read the following 3 sections carefully:
 
-   * Installation
    * Disclaimer
+   * Version and Integrity
+   * Installation
    * License
    * Instructions
 
+
+## Disclaimer
+
+Tested on *my* machine only. No guarantees that it will work on yours and I'm not responsible for any damange caused directly or indirectly by these scripts nor by your actions. If you find a bug (and there might be) raise an Issue on the relevant Github page.
+
+Similarly if you have an idea or want to contribute, write something to the Github Issues. No guarantees that I'll do something, but always open to ideas. NB: read the LICENSE file too!
+
+## Version and Integrity
+
+This is version 1.3. The file TolissCustom.lua should have the following checksums:
+
+   * SHA256: 5e5edef587d3cf944ea15c6805472ecf55e210c9f8cf1340c26c1dfe3a4bcea9
+   * SHA512: 43a6d6d501ee05b28cf428b29b8b2e2bbb7f731ccfbf2e3f36fe51a24a66001121e2b667f47c24c7dc2c5c2e10bde4fb04560eef4402fac240a58b7d7b394051
+     
 ## Installation
 
 Firstly you require:
@@ -21,12 +36,6 @@ Then place the file `TolissCustom.lua` into the FlyWithLua scripts directory whi
 NB: This might work with other Toliss aircraft like the A319, A320 and A330, maybe even the A340...I have no idea. YMMV. Good luck (see Disclaimer)
 
 Start X-Plane 12.
-
-## Disclaimer
-
-Tested on *my* machine only. No guarantees that it will work on yours and I'm not responsible for any damange caused directly or indirectly by these scripts nor by your actions. If you find a bug (and there might be) raise an Issue on the relevant Github page.
-
-Similarly if you have an idea or want to contribute, write something to the Github Issues. No guarantees that I'll do something, but always open to ideas. NB: read the LICENSE file too!
 
 ## License
 
