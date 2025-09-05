@@ -1,6 +1,6 @@
 -- TolissXKeyPadHelper
 -- Copyright (C) 2025  Ian Oliver
--- Version 1.3
+-- Version 1.5
 
 -- This program is free software: you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -83,6 +83,8 @@ function PaxGateAll()
          paxdoors[6]=2
          paxdoors[7]=2
 end 
+
+
 
 
 function PaxStand1()
@@ -252,14 +254,14 @@ function CabinLightsTOLAND()
       print("[ *** ian/CabinLightsTOLAND]" )
 
       cabinlights = XPLMFindDataRef( "AirbusFBW/cabinLightLevel_perc")   
-      XPLMSetDataf( cabinlights, 4.0 )
+      XPLMSetDataf( cabinlights, 1.0 )
 end 
 
 function CabinLightsMED()
       print("[ *** ian/CabinLightsMED]" )
 
       cabinlights = XPLMFindDataRef( "AirbusFBW/cabinLightLevel_perc")   
-      XPLMSetDataf( cabinlights, 30.0 )
+      XPLMSetDataf( cabinlights, 15.0 )
 end
 
 function CabinLightsON()
@@ -457,6 +459,17 @@ function WXRadarToggle()
            print("==========================================================================")
       end
 end
+
+
+-- function AreBrakesHot()
+--          print("[ *** ian/AreBrakesHot]" )
+--          b       = dataref_table( "AirbusFBW/BrakeTempArray")
+
+--          if (b[0]>280 or b[1]>280 or b[2]>280 or b[3]>280) then
+--             return 1
+--          else
+--             return 0
+-- end
 
 
 create_command("ian/PaxClose", "Close all passenger doors", "PaxDoorsClose()", "", "")
