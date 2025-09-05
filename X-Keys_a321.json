@@ -3,7 +3,7 @@
         "Configuration Comments": "",
         "Disable Includes": false,
         "Json Version": 3,
-        "Last Saved Date": "2025-08-05_201945",
+        "Last Saved Date": "2025-08-31_224018",
         "UNITS": {
             "0": {
                 "Hardware Unit": false,
@@ -21008,6 +21008,495 @@
                                 },
                                 "Use Conditional Commands": false
                             },
+                            "50": {
+                                "Blue Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Blue On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Command Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "1",
+                                    "Logic Test Type": "Top Click",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Comments": "",
+                                "Conditional Labels": {
+                                    "0": {
+                                        "Lines": {
+                                            "0": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Dome",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "1": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Off",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            }
+                                        },
+                                        "Logic Test": {
+                                            "Comment": "",
+                                            "Compare Value": "0",
+                                            "Logic Test Type": "Equal",
+                                            "Negate": false,
+                                            "Override Data Source": false
+                                        }
+                                    },
+                                    "1": {
+                                        "Lines": {
+                                            "0": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Dome",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "1": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Dim",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            }
+                                        },
+                                        "Logic Test": {
+                                            "Comment": "",
+                                            "Compare Value": "1",
+                                            "Logic Test Type": "Equal",
+                                            "Negate": false,
+                                            "Override Data Source": false
+                                        }
+                                    },
+                                    "2": {
+                                        "Lines": {
+                                            "0": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Dome",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "1": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Bright",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            }
+                                        },
+                                        "Logic Test": {
+                                            "Comment": "",
+                                            "Compare Value": "2",
+                                            "Logic Test Type": "Equal",
+                                            "Negate": false,
+                                            "Override Data Source": false
+                                        }
+                                    }
+                                },
+                                "Default Command Set": {
+                                    "Commands": {
+                                        "0": {
+                                            "Mode": "Continuous",
+                                            "Name": "toliss_airbus/lightcommands/DomeLightDown"
+                                        }
+                                    },
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Font Colors": null,
+                                "Font Index": -1,
+                                "Key Colors": null,
+                                "Locked": false,
+                                "Logic Dataref": {
+                                    "Dataref": {
+                                        "Dataref Index": 0,
+                                        "Dataref Name": "ckpt/oh/domeLight/anim",
+                                        "Drag Factor": 0.0,
+                                        "Formula ID": "",
+                                        "Increment Amount": "",
+                                        "Increment Mode": "None",
+                                        "Max": "",
+                                        "Min": "",
+                                        "Multiply By": "",
+                                        "Radio Value": 0.0,
+                                        "Scale Factor": 1
+                                    },
+                                    "Use Expression": false
+                                },
+                                "Name": "",
+                                "Numeric Dataref": {
+                                    "Dataref Index": 0,
+                                    "Dataref Name": "",
+                                    "Drag Factor": 0.0,
+                                    "Formula ID": "",
+                                    "Increment Amount": "",
+                                    "Increment Mode": "None",
+                                    "Max": "",
+                                    "Min": "",
+                                    "Multiply By": "",
+                                    "Radio Value": 0.0,
+                                    "Scale Factor": 1,
+                                    "Speech Set": null
+                                },
+                                "Red Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Red On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "True Command Set": {
+                                    "Commands": {
+                                        "0": {
+                                            "Mode": "Continuous",
+                                            "Name": "toliss_airbus/lightcommands/DomeLightUp"
+                                        }
+                                    },
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Use Conditional Commands": true
+                            },
                             "52": {
                                 "Blue Blink Logic Test": {
                                     "Comment": "",
@@ -21153,6 +21642,66 @@
                                                     }
                                                 },
                                                 "Use Bargraph": false
+                                            },
+                                            "2": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Dark",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
                                             }
                                         },
                                         "Logic Test": {
@@ -21182,6 +21731,250 @@
                                                 "Blue": 0,
                                                 "Green": 229,
                                                 "Red": 255
+                                            }
+                                        },
+                                        "Image Reference": {
+                                            "Name": "",
+                                            "Path": "",
+                                            "UUID": ""
+                                        },
+                                        "Logic Test": {
+                                            "Comment": "",
+                                            "Compare Value": "",
+                                            "Logic Test Type": "Always True",
+                                            "Negate": false,
+                                            "Override Data Source": false
+                                        }
+                                    }
+                                },
+                                "Font Index": -1,
+                                "Key Colors": null,
+                                "Locked": false,
+                                "Logic Dataref": {
+                                    "Dataref": {
+                                        "Dataref Index": 0,
+                                        "Dataref Name": "",
+                                        "Drag Factor": 0.0,
+                                        "Formula ID": "",
+                                        "Increment Amount": "",
+                                        "Increment Mode": "None",
+                                        "Max": "",
+                                        "Min": "",
+                                        "Multiply By": "",
+                                        "Radio Value": 0.0,
+                                        "Scale Factor": 1
+                                    },
+                                    "Use Expression": false
+                                },
+                                "Name": "",
+                                "Numeric Dataref": {
+                                    "Dataref Index": 0,
+                                    "Dataref Name": "",
+                                    "Drag Factor": 0.0,
+                                    "Formula ID": "",
+                                    "Increment Amount": "",
+                                    "Increment Mode": "None",
+                                    "Max": "",
+                                    "Min": "",
+                                    "Multiply By": "",
+                                    "Radio Value": 0.0,
+                                    "Scale Factor": 1,
+                                    "Speech Set": null
+                                },
+                                "Red Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Red On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "True Command Set": {
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Use Conditional Commands": false
+                            },
+                            "54": {
+                                "Blue Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Blue On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Command Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Comments": "",
+                                "Conditional Labels": {
+                                    "0": {
+                                        "Lines": {
+                                            "0": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Default",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "1": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "View",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            }
+                                        },
+                                        "Logic Test": {
+                                            "Comment": "",
+                                            "Compare Value": "",
+                                            "Logic Test Type": "Always True",
+                                            "Negate": false,
+                                            "Override Data Source": false
+                                        }
+                                    }
+                                },
+                                "Default Command Set": {
+                                    "Commands": {
+                                        "0": {
+                                            "Mode": "Single",
+                                            "Name": "sim/view/default_view"
+                                        }
+                                    },
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Font Colors": {
+                                    "0": {
+                                        "Background Image Mode": 0,
+                                        "Flashing Color": {
+                                            "0": {
+                                                "Blue": 0,
+                                                "Green": 255,
+                                                "Red": 0
                                             }
                                         },
                                         "Image Reference": {
@@ -21612,7 +22405,7 @@
                                                         "Multiplier": 1.0,
                                                         "Substring End Index": 0,
                                                         "Substring Start Index": 0,
-                                                        "Text": "Panel",
+                                                        "Text": "Night",
                                                         "Type": "Text",
                                                         "Use As Integer": false
                                                     }
@@ -21732,7 +22525,7 @@
                                                         "Multiplier": 1.0,
                                                         "Substring End Index": 0,
                                                         "Substring Start Index": 0,
-                                                        "Text": "Off",
+                                                        "Text": "Dome Dim",
                                                         "Type": "Text",
                                                         "Use As Integer": false
                                                     }
@@ -21753,7 +22546,7 @@
                                     "Commands": {
                                         "0": {
                                             "Mode": "Continuous",
-                                            "Name": "ian/PanelLightingOff"
+                                            "Name": "ian/BrightnessNightDomeDim"
                                         }
                                     },
                                     "Speech Set": null,
@@ -21783,6 +22576,287 @@
                                         }
                                     }
                                 },
+                                "Font Index": -1,
+                                "Key Colors": null,
+                                "Locked": false,
+                                "Logic Dataref": {
+                                    "Dataref": {
+                                        "Dataref Index": 0,
+                                        "Dataref Name": "",
+                                        "Drag Factor": 0.0,
+                                        "Formula ID": "",
+                                        "Increment Amount": "",
+                                        "Increment Mode": "None",
+                                        "Max": "",
+                                        "Min": "",
+                                        "Multiply By": "",
+                                        "Radio Value": 0.0,
+                                        "Scale Factor": 1
+                                    },
+                                    "Use Expression": false
+                                },
+                                "Name": "",
+                                "Numeric Dataref": {
+                                    "Dataref Index": 0,
+                                    "Dataref Name": "",
+                                    "Drag Factor": 0.0,
+                                    "Formula ID": "",
+                                    "Increment Amount": "",
+                                    "Increment Mode": "None",
+                                    "Max": "",
+                                    "Min": "",
+                                    "Multiply By": "",
+                                    "Radio Value": 0.0,
+                                    "Scale Factor": 1,
+                                    "Speech Set": null
+                                },
+                                "Red Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Red On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "True Command Set": {
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Use Conditional Commands": false
+                            },
+                            "66": {
+                                "Blue Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Blue On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Command Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Comments": "",
+                                "Conditional Labels": {
+                                    "0": {
+                                        "Lines": {
+                                            "0": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Toggle",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "1": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Capt/FO",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "2": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "View",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            }
+                                        },
+                                        "Logic Test": {
+                                            "Comment": "",
+                                            "Compare Value": "",
+                                            "Logic Test Type": "Always True",
+                                            "Negate": false,
+                                            "Override Data Source": false
+                                        }
+                                    }
+                                },
+                                "Default Command Set": {
+                                    "Commands": {
+                                        "0": {
+                                            "Mode": "Continuous",
+                                            "Name": "toliss_airbus/3d_cockpit_commands/view_3D_capt_fo_toggle"
+                                        }
+                                    },
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Font Colors": null,
                                 "Font Index": -1,
                                 "Key Colors": null,
                                 "Locked": false,
@@ -22118,6 +23192,287 @@
                                 },
                                 "Use Conditional Commands": false
                             },
+                            "78": {
+                                "Blue Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Blue On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Command Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Comments": "",
+                                "Conditional Labels": {
+                                    "0": {
+                                        "Lines": {
+                                            "0": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Pax",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "1": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "View",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "2": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Wing",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            }
+                                        },
+                                        "Logic Test": {
+                                            "Comment": "",
+                                            "Compare Value": "",
+                                            "Logic Test Type": "Always True",
+                                            "Negate": false,
+                                            "Override Data Source": false
+                                        }
+                                    }
+                                },
+                                "Default Command Set": {
+                                    "Commands": {
+                                        "0": {
+                                            "Mode": "Continuous",
+                                            "Name": "toliss_airbus/3d_cockpit_commands/wing_observer"
+                                        }
+                                    },
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Font Colors": null,
+                                "Font Index": -1,
+                                "Key Colors": null,
+                                "Locked": false,
+                                "Logic Dataref": {
+                                    "Dataref": {
+                                        "Dataref Index": 0,
+                                        "Dataref Name": "",
+                                        "Drag Factor": 0.0,
+                                        "Formula ID": "",
+                                        "Increment Amount": "",
+                                        "Increment Mode": "None",
+                                        "Max": "",
+                                        "Min": "",
+                                        "Multiply By": "",
+                                        "Radio Value": 0.0,
+                                        "Scale Factor": 1
+                                    },
+                                    "Use Expression": false
+                                },
+                                "Name": "",
+                                "Numeric Dataref": {
+                                    "Dataref Index": 0,
+                                    "Dataref Name": "",
+                                    "Drag Factor": 0.0,
+                                    "Formula ID": "",
+                                    "Increment Amount": "",
+                                    "Increment Mode": "None",
+                                    "Max": "",
+                                    "Min": "",
+                                    "Multiply By": "",
+                                    "Radio Value": 0.0,
+                                    "Scale Factor": 1,
+                                    "Speech Set": null
+                                },
+                                "Red Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Red On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "True Command Set": {
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Use Conditional Commands": false
+                            },
                             "85": {
                                 "Blue Blink Logic Test": {
                                     "Comment": "",
@@ -22339,6 +23694,591 @@
                                         "0": {
                                             "Mode": "Continuous",
                                             "Name": "ian/CabinLightsON"
+                                        }
+                                    },
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Font Colors": null,
+                                "Font Index": -1,
+                                "Key Colors": null,
+                                "Locked": false,
+                                "Logic Dataref": {
+                                    "Dataref": {
+                                        "Dataref Index": 0,
+                                        "Dataref Name": "",
+                                        "Drag Factor": 0.0,
+                                        "Formula ID": "",
+                                        "Increment Amount": "",
+                                        "Increment Mode": "None",
+                                        "Max": "",
+                                        "Min": "",
+                                        "Multiply By": "",
+                                        "Radio Value": 0.0,
+                                        "Scale Factor": 1
+                                    },
+                                    "Use Expression": false
+                                },
+                                "Name": "",
+                                "Numeric Dataref": {
+                                    "Dataref Index": 0,
+                                    "Dataref Name": "",
+                                    "Drag Factor": 0.0,
+                                    "Formula ID": "",
+                                    "Increment Amount": "",
+                                    "Increment Mode": "None",
+                                    "Max": "",
+                                    "Min": "",
+                                    "Multiply By": "",
+                                    "Radio Value": 0.0,
+                                    "Scale Factor": 1,
+                                    "Speech Set": null
+                                },
+                                "Red Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Red On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "True Command Set": {
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Use Conditional Commands": false
+                            },
+                            "88": {
+                                "Blue Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Blue On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Command Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Comments": "",
+                                "Conditional Labels": {
+                                    "0": {
+                                        "Lines": {
+                                            "0": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Panel",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "1": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Lighting",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "2": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Off",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            }
+                                        },
+                                        "Logic Test": {
+                                            "Comment": "",
+                                            "Compare Value": "",
+                                            "Logic Test Type": "Always True",
+                                            "Negate": false,
+                                            "Override Data Source": false
+                                        }
+                                    }
+                                },
+                                "Default Command Set": {
+                                    "Commands": {
+                                        "0": {
+                                            "Mode": "Continuous",
+                                            "Name": "ian/PanelLightingOff"
+                                        }
+                                    },
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Font Colors": {
+                                    "0": {
+                                        "Background Image Mode": 0,
+                                        "Flashing Color": {
+                                            "0": {
+                                                "Blue": 0,
+                                                "Green": 229,
+                                                "Red": 255
+                                            }
+                                        },
+                                        "Image Reference": {
+                                            "Name": "",
+                                            "Path": "",
+                                            "UUID": ""
+                                        },
+                                        "Logic Test": {
+                                            "Comment": "",
+                                            "Compare Value": "",
+                                            "Logic Test Type": "Always True",
+                                            "Negate": false,
+                                            "Override Data Source": false
+                                        }
+                                    }
+                                },
+                                "Font Index": -1,
+                                "Key Colors": null,
+                                "Locked": false,
+                                "Logic Dataref": {
+                                    "Dataref": {
+                                        "Dataref Index": 0,
+                                        "Dataref Name": "",
+                                        "Drag Factor": 0.0,
+                                        "Formula ID": "",
+                                        "Increment Amount": "",
+                                        "Increment Mode": "None",
+                                        "Max": "",
+                                        "Min": "",
+                                        "Multiply By": "",
+                                        "Radio Value": 0.0,
+                                        "Scale Factor": 1
+                                    },
+                                    "Use Expression": false
+                                },
+                                "Name": "",
+                                "Numeric Dataref": {
+                                    "Dataref Index": 0,
+                                    "Dataref Name": "",
+                                    "Drag Factor": 0.0,
+                                    "Formula ID": "",
+                                    "Increment Amount": "",
+                                    "Increment Mode": "None",
+                                    "Max": "",
+                                    "Min": "",
+                                    "Multiply By": "",
+                                    "Radio Value": 0.0,
+                                    "Scale Factor": 1,
+                                    "Speech Set": null
+                                },
+                                "Red Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Red On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "True Command Set": {
+                                    "Speech Set": null,
+                                    "Static Speech": ""
+                                },
+                                "Use Conditional Commands": false
+                            },
+                            "90": {
+                                "Blue Blink Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Blue On Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Command Logic Test": {
+                                    "Comment": "",
+                                    "Compare Value": "",
+                                    "Logic Test Type": "And",
+                                    "Negate": false,
+                                    "Override Data Source": false
+                                },
+                                "Comments": "",
+                                "Conditional Labels": {
+                                    "0": {
+                                        "Lines": {
+                                            "0": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Pax",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "1": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "View",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            },
+                                            "2": {
+                                                "Bargraph": {
+                                                    "Color": {
+                                                        "Blue": 0,
+                                                        "Green": 0,
+                                                        "Red": 0
+                                                    },
+                                                    "Dataref": {
+                                                        "Dataref": {
+                                                            "Dataref Index": 0,
+                                                            "Dataref Name": "",
+                                                            "Drag Factor": 0.0,
+                                                            "Formula ID": "",
+                                                            "Increment Amount": "",
+                                                            "Increment Mode": "None",
+                                                            "Max": "",
+                                                            "Min": "",
+                                                            "Multiply By": "",
+                                                            "Radio Value": 0.0,
+                                                            "Scale Factor": 1
+                                                        },
+                                                        "Use Expression": false
+                                                    },
+                                                    "Rounded Corners": false
+                                                },
+                                                "Font Color Index": 0,
+                                                "Font Index": -1,
+                                                "Force Color Index": false,
+                                                "Segments": {
+                                                    "0": {
+                                                        "Custom String Index": 0,
+                                                        "Dataref": {
+                                                            "Dataref": {
+                                                                "Dataref Index": 0,
+                                                                "Dataref Name": "",
+                                                                "Drag Factor": 0.0,
+                                                                "Formula ID": "",
+                                                                "Increment Amount": "",
+                                                                "Increment Mode": "None",
+                                                                "Max": "",
+                                                                "Min": "",
+                                                                "Multiply By": "",
+                                                                "Radio Value": 0.0,
+                                                                "Scale Factor": 1
+                                                            },
+                                                            "Use Expression": false
+                                                        },
+                                                        "Font Index": -1,
+                                                        "Force Color": false,
+                                                        "Format": "",
+                                                        "Multiplier": 1.0,
+                                                        "Substring End Index": 0,
+                                                        "Substring Start Index": 0,
+                                                        "Text": "Engine",
+                                                        "Type": "Text",
+                                                        "Use As Integer": false
+                                                    }
+                                                },
+                                                "Use Bargraph": false
+                                            }
+                                        },
+                                        "Logic Test": {
+                                            "Comment": "",
+                                            "Compare Value": "",
+                                            "Logic Test Type": "Always True",
+                                            "Negate": false,
+                                            "Override Data Source": false
+                                        }
+                                    }
+                                },
+                                "Default Command Set": {
+                                    "Commands": {
+                                        "0": {
+                                            "Mode": "Continuous",
+                                            "Name": "toliss_airbus/3d_cockpit_commands/engine_observer"
                                         }
                                     },
                                     "Speech Set": null,
