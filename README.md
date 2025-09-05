@@ -16,10 +16,10 @@ Similarly if you have an idea or want to contribute, write something to the Gith
 
 ## Version and Integrity
 
-This is version 1.3. The file TolissCustom.lua should have the following checksums:
+This is version 1.5. The file TolissCustom.lua should have the following checksums:
 
-   * SHA256: 5e5edef587d3cf944ea15c6805472ecf55e210c9f8cf1340c26c1dfe3a4bcea9
-   * SHA512: 43a6d6d501ee05b28cf428b29b8b2e2bbb7f731ccfbf2e3f36fe51a24a66001121e2b667f47c24c7dc2c5c2e10bde4fb04560eef4402fac240a58b7d7b394051
+   * SHA256: 9ab0b6eb3e9faf9645220cd6f804cc2ef63dfa9a83e1d50c8ce84ebaedc767f8
+   * SHA512: 01f588970d14944476d5bd21a5ca653e8da44318a217a93d97790851c2b1458af28acd20fdb5263472f354519e7c90148402852e074a2c390e939079fbd53666
      
 ## Installation
 
