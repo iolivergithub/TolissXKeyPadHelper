@@ -16,7 +16,7 @@ Similarly if you have an idea or want to contribute, write something to the Gith
 
 ## Version and Integrity
 
-This is version 1.5. The file TolissCustom.lua should have the following checksums:
+This is version 1.6. The file TolissCustom.lua should have the following checksums:
 
    * SHA256: 9ab0b6eb3e9faf9645220cd6f804cc2ef63dfa9a83e1d50c8ce84ebaedc767f8
    * SHA512: 01f588970d14944476d5bd21a5ca653e8da44318a217a93d97790851c2b1458af28acd20fdb5263472f354519e7c90148402852e074a2c390e939079fbd53666
@@ -72,7 +72,7 @@ ECAM functions are typically just grey buttons, but will turn amber if a particu
 
 TCAS button switches between On and Auto. The TCAS state below this is changed via the top and bottom half of the buttons. The text colour changes depending upon the state as a visual warning. This can select any of the 5 TCAS states from STBY through to full TA/RA
 
-Predictive wind shear (PWS) is set to auto via the top half of the button and on by the lower half. WXRadar toggles through the three states: SYS1, SYS2 and OFF - when in Sys1 the button text is green, Sys2 in amber and Off is white. Additionally this manipulates the Multiscan and GCS switches with both of these systems being in man and off modes respectively if WXRadar is off, and both in auto mode if SYS1 or SYS2 are on.
+Predictive wind shear (PWS) is set to auto via the top half of the button and on by the lower half. WXRadar toggles through the three states: SYS1, SYS2 and OFF - when in Sys1 the button text is green, Sys2 in amber and Off is white. Additionally this manipulates the Multiscan and GCS switches with both of these systems being in man and off modes respectively if WXRadar is off, and both in auto mode if SYS1 or SYS2 are on. Three buttons are provided for the WX radar gain, tilt and mode of operation: each of these buttons is clickable in the top and bottom halves. The mode varies from WX, through WX+T, TURB to MAP and back. The gain varies in increments and decrements of 20 from -150 to +120, and tilt in increments and decrements of 20 from -120 to +120.
 
 Brake fan (BRK FAN) follows the dark cockpit rule with the button being white when the fans are on, and black when off. This button is displayed in amber when the brakes are hot.
 
