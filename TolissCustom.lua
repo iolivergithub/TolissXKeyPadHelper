@@ -1,6 +1,6 @@
 -- TolissXKeyPadHelper
 -- Copyright (C) 2025  Ian Oliver
--- Version 1.5
+-- Version 1.7
 
 -- This program is free software: you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
 -- along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-print("[ *** IAN TolissXKeyPadHelper - Version 1.2 - 5 August 2025" )
+print("[ *** IAN TolissXKeyPadHelper - Version 1.7 - 5 October 2025" )
 print("[ *** - aircraft type is... ]" )
 print(PLANE_ICAO)
 
@@ -440,7 +440,6 @@ function WXRadarToggle()
           XPLMSetDatai( wxsys, 1 )   -- set to off
           XPLMSetDatai( gcs, 0 )  
           XPLMSetDatai( multiscan, 0 )  
-
       elseif (val==1)                  -- if off
       then 
           XPLMSetDatai( wxsys, 2 )   -- set sys2
@@ -460,6 +459,20 @@ function WXRadarToggle()
       end
 end
 
+
+
+function IanReadme()
+     print("[ *** ian/IanReadme]" )
+     print("==========================================================================")
+     print("TolissXKeyPadHelper")
+     print("Version 1.7 - 5 October 2025")
+     print("(C)2025 Ian Oliver.")
+     print("This software is released until teh GNU General Public License Version 3")
+     print("More information here: https://github.com/iolivergithub/TolissXKeyPadHelper")
+     print("Ensure you have read the README file at the above location. No warrany, no guarantees etc")
+     print("Issues, problems, suggestions, bug fixes etc, go here --> https://github.com/iolivergithub/TolissXKeyPadHelper/issues")
+     print("==========================================================================")
+end
 
 -- function AreBrakesHot()
 --          print("[ *** ian/AreBrakesHot]" )
@@ -489,32 +502,35 @@ create_command("ian/DUBright", "Make all display units bright", "DUBright()", ""
 create_command("ian/DUMedium", "Make all display units medium brightness", "DUMedium()", "", "")
 create_command("ian/DUDim", "Make all display units dim", "DUDim()", "", "")
 
-create_command("ian/IntegralBright", "Make all display units bright", "IntegralBright()", "", "")
-create_command("ian/IntegralMedium", "Make all display units medium brightness", "IntegralMedium()", "", "")
-create_command("ian/IntegralDim", "Make all display units dim", "IntegralDim()", "", "")
+create_command("ian/IntegralBright", "Make integral bright", "IntegralBright()", "", "")
+create_command("ian/IntegralMedium", "Make integral medium brightness", "IntegralMedium()", "", "")
+create_command("ian/IntegralDim", "Make integral dim", "IntegralDim()", "", "")
 
-create_command("ian/OHPBright", "Make all display units bright", "OHPBright()", "", "")
-create_command("ian/OHPMedium", "Make all display units medium brightness", "OHPMedium()", "", "")
-create_command("ian/OHPDim", "Make all display units dim", "OHPDim()", "", "")
+create_command("ian/OHPBright", "Make overhead panel bright", "OHPBright()", "", "")
+create_command("ian/OHPMedium", "Make overhead panel medium brightness", "OHPMedium()", "", "")
+create_command("ian/OHPDim", "Make overhead panel dim", "OHPDim()", "", "")
 
-create_command("ian/CabinLightsOFF", "Make all display units bright", "CabinLightsOFF()", "", "")
-create_command("ian/CabinLightsTOLAND", "Make all display units medium brightness", "CabinLightsTOLAND()", "", "")
-create_command("ian/CabinLightsMED", "Make all display units medium brightness", "CabinLightsMED()", "", "")
-create_command("ian/CabinLightsON", "Make all display units dim", "CabinLightsON()", "", "")
+create_command("ian/CabinLightsOFF", "Turn cabin lights off", "CabinLightsOFF()", "", "")
+create_command("ian/CabinLightsTOLAND", "Turn cabin lights dim for takeoff/landing", "CabinLightsTOLAND()", "", "")
+create_command("ian/CabinLightsMED", "Turn cabin lights to medium brightness", "CabinLightsMED()", "", "")
+create_command("ian/CabinLightsON", "Turn cabin lights on", "CabinLightsON()", "", "")
 
 
-create_command("ian/FloodLightsOff", "Make all display units bright", "FloodLightsOff()", "", "")
-create_command("ian/FloodLightsDim", "Make all display units medium brightness", "FloodLightsDim()", "", "")
-create_command("ian/FloodLightsBright", "Make all display units dim", "FloodLightsBright()", "", "")
+create_command("ian/FloodLightsOff", "Turn cockpit floodlights off", "FloodLightsOff()", "", "")
+create_command("ian/FloodLightsDim", "Make cockpit floodlights medium brightness", "FloodLightsDim()", "", "")
+create_command("ian/FloodLightsBright", "Make cockpit floodlights  bright", "FloodLightsBright()", "", "")
 
-create_command("ian/RapidPowerOn", "Make all display units dim", "RapidPowerOn()", "", "")
-create_command("ian/RapidPowerOff", "Make all display units dim", "RapidPowerOff()", "", "")
+create_command("ian/RapidPowerOn", "Rapidly power on aircraft. Use only from cold and dark.", "RapidPowerOn()", "", "")
+create_command("ian/RapidPowerOff", "Rapidly power off aircraft.", "RapidPowerOff()", "", "")
 
-create_command("ian/BrightnessNight", "Make all display units dim", "BrightnessNight()", "", "")
-create_command("ian/BrightnessNightDomeDim", "Make all display units dim", "BrightnessNightDomeDim()", "", "")
+create_command("ian/BrightnessNight", "Convenience for setting up cockpit lights for night operation", "BrightnessNight()", "", "")
+create_command("ian/BrightnessNightDomeDim", "Convenience for setting up cockpit lights for night operation but with dome lights dim", "BrightnessNightDomeDim()", "", "")
 
-create_command("ian/PanelLightingOff", "Make all display units dim", "PanelLightingOff()", "", "")
+create_command("ian/PanelLightingOff", "Turn off panel lighting", "PanelLightingOff()", "", "")
 
-create_command("ian/WXRadarToggle", "Make all display units dim", "WXRadarToggle()", "", "")
+create_command("ian/WXRadarToggle", "Convenience function for turning on WX radar", "WXRadarToggle()", "", "")
+
+create_command("ian/Readme", "Prints README to log.txt", "IanReadme()", "", "")
+
 
 end -- ToLiss only      
