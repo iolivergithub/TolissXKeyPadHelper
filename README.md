@@ -25,10 +25,13 @@ This is version 1.6. The file TolissCustom.lua should have the following checksu
 
 Firstly you require:
    * XPlane 12
-   + The Toliss A321 ( v1.7+ ) for XPlane 12
+   + The Toliss A321 ( v1.8+ ) for XPlane 12
    + XKeyPad ( v1.6.1 or better )
    + FlyWithLuaNG ( v2.8.XX NG )
-
+   + Other Toliss Aircraft
+   
+NB: This has been tested with Toliss A321 v.1.7, but 1.8 with XP12 12.3-b4 includes the WX API.   
+   
 You now have to place the 3 files `X-Keys_a321_StdDef.jaon`, `X-Keys_a321.json` and `X-Keys_a321_StdDef.ini`  in your Toliss A321 directory, which should be in `X-Plane12\Aircraft\TolissA321_V1p7`  (NB: the specific name ofthe TolissA321 directory does change with versions, but the lastest iv V1p7).
 
 Then place the file `TolissCustom.lua` into the FlyWithLua scripts directory which should be `X-Plane 12\Resources\plugins\FlyWithLua\Scripts`
@@ -36,6 +39,13 @@ Then place the file `TolissCustom.lua` into the FlyWithLua scripts directory whi
 NB: This might work with other Toliss aircraft like the A319, A320 and A330, maybe even the A340...I have no idea. YMMV. Good luck (see Disclaimer)
 
 Start X-Plane 12.
+
+
+### Other Toliss Aircraft
+
+I have no idea if this works with other Toliss aircraft, ie: the A319, A320, A330 and A340 (ceo and neo versions where applicable). If you do test it with these then I think you have to rename the XKeyPad files accordingly by the aircraft model.  Datarefs and commands might change between aircraft so some features might not work. Please reread the above to ensure that you understand completely what this has been tested on, ie: my machine only.
+
+I welcome any reports about it working elsewhere :-)
 
 ## License
 
