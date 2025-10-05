@@ -16,10 +16,9 @@ Similarly if you have an idea or want to contribute, write something to the Gith
 
 ## Version and Integrity
 
-This is version 1.6. The file TolissCustom.lua should have the following checksums:
+This is version 1.7. The file TolissCustom.lua should have the following checksums:
 
-   * SHA256: 9ab0b6eb3e9faf9645220cd6f804cc2ef63dfa9a83e1d50c8ce84ebaedc767f8
-   * SHA512: 01f588970d14944476d5bd21a5ca653e8da44318a217a93d97790851c2b1458af28acd20fdb5263472f354519e7c90148402852e074a2c390e939079fbd53666
+   * SHA256: 637447fcb408becc99b3b73666fffc57b73f5b761c43de6d733c97db408b9625
      
 ## Installation
 
@@ -99,6 +98,7 @@ This is contains some useful convenience things. The page is accessed by clickin
    * Cabin lighting
    * Rapid Power on/off
    * Jetways
+   * Copyright message
 
 Jetways - this calls the openSAM/toggle_jwy function. However Toliss aircraft do not support OpenSAM's Jetways, so it doesn't work. I haven't removed it for various reasons. If it does start working, then it'll show different colours depending upon the state of the jeyway. If you know how to get this working with Toliss aircraft please let me know.
 
@@ -116,8 +116,4 @@ Note 2: Wifi...Toliss still use no-smoking signs, but my airline has free wifi, 
 
 Note 3: some of the above may or may not work, especially anything involving switches, but it seems to on mine.
 
-## Screenshots
-
-![Main Panel]([http://url/to/img.png](https://raw.githubusercontent.com/iolivergithub/TolissXKeyPadHelper/refs/heads/main/mainpanel.png))
-
-![Additional Panel]([http://url/to/img.png](https://raw.githubusercontent.com/iolivergithub/TolissXKeyPadHelper/refs/heads/main/additionalpanel.png))
+If you press the button with the version and copyright you'll get some stuff written to the Log.txt. Otherwise this button doesn't do anything really.
