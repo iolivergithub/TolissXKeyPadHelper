@@ -16,9 +16,9 @@ Similarly if you have an idea or want to contribute, write something to the Gith
 
 ## Version and Integrity
 
-This is version 1.7. The file TolissCustom.lua should have the following checksums:
+This is version 1.9. The file TolissCustom.lua should have the following checksums:
 
-   * SHA256: 637447fcb408becc99b3b73666fffc57b73f5b761c43de6d733c97db408b9625
+   * SHA256: f9428021d0cedd6e0acbf7ab184bde812ec8fbd2639d91a423345e076cf0bd53
      
 ## Installation
 
@@ -29,9 +29,13 @@ Firstly you require:
    + FlyWithLuaNG ( v2.8.XX NG )
    + Other Toliss Aircraft
    
-NB: This has been tested with Toliss A321 v.1.7, but 1.8 with XP12 12.3-b4 includes the WX API.   
+NB: This has been tested with Toliss A321 v1.8 with XP12 12.4 which includes the WX API. It will probably work, and has done in the past, with earlier versions, though no guarantees.
+
+Two options ... I think the first works, but if not try the second:
+
+1. Place the file `X-Keys_a321.json`  in your Toliss A321 directory, which should be in `X-Plane12\Aircraft\TolissA321_V1p7`  (NB: the specific name ofthe TolissA321 directory does change with versions, but the lastest iv V1p7).
    
-You now have to place the 3 files `X-Keys_a321_StdDef.jaon`, `X-Keys_a321.json` and `X-Keys_a321_StdDef.ini`  in your Toliss A321 directory, which should be in `X-Plane12\Aircraft\TolissA321_V1p7`  (NB: the specific name ofthe TolissA321 directory does change with versions, but the lastest iv V1p7).
+2. You now have to place the 3 files `X-Keys_a321_StdDef.json`, `X-Keys_a321.json` and `X-Keys_a321_StdDef.ini`  in your Toliss A321 directory, which should be in `X-Plane12\Aircraft\TolissA321_V1p7`  (NB: the specific name ofthe TolissA321 directory does change with versions, but the lastest iv V1p7).
 
 Then place the file `TolissCustom.lua` into the FlyWithLua scripts directory which should be `X-Plane 12\Resources\plugins\FlyWithLua\Scripts`
 
@@ -68,9 +72,10 @@ This is where you'll spend most of your time. It is split into various sections.
    * A large block corresponding to the ECAM functions
    * TCAS
    * Predictive Wind Shear and Weather Radar
-   * Brake Fan
+   * Brake Fan and hot brakes indicator
    * Convenience functions for passenger and cargo doors
    * Ground functions
+   * Deicing
    * ADIRU and ISCS
 
 The lighting functions are modified using the upper and lower half of the grey buttons to change the state. As you do this, the text on the buttons will change. Some buttons have more than 2 states, eg: Landing lights are retracted, off and on.
@@ -83,11 +88,13 @@ TCAS button switches between On and Auto. The TCAS state below this is changed v
 
 Predictive wind shear (PWS) is set to auto via the top half of the button and on by the lower half. WXRadar toggles through the three states: SYS1, SYS2 and OFF - when in Sys1 the button text is green, Sys2 in amber and Off is white. Additionally this manipulates the Multiscan and GCS switches with both of these systems being in man and off modes respectively if WXRadar is off, and both in auto mode if SYS1 or SYS2 are on. Three buttons are provided for the WX radar gain, tilt and mode of operation: each of these buttons is clickable in the top and bottom halves. The mode varies from WX, through WX+T, TURB to MAP and back. The gain varies in increments and decrements of 20 from -150 to +120, and tilt in increments and decrements of 20 from -120 to +120.
 
-Brake fan (BRK FAN) follows the dark cockpit rule with the button being white when the fans are on, and black when off. This button is displayed in amber when the brakes are hot.
+Brake fan (BRK FAN) follows the dark cockpit rule with the button being white when the fans are on, and black when off. Above this button is the hot brakes indicator which displays HOT in red when the brakes are, well, hot. This should probably be in amber, but for the next version.
 
 The door functions are just buttons for conveniently selecting pax and cargo door states for gate and stand situations. Check the DOORS ECAM page for their current state. NB: this accesses the ISCS functionality, so even when at gate, ground vehicles might appear - I have no control over this.
 
 Ground function are bright red or black to denote their state. So ground power on and chocks applied are *red*. If you find  you plane not moving under full throttle, parking brake disengaged anda bright *red* CHOCKS illuminated, there's your answer.
+
+Deicing can be triggered by the deicing buttons - one does triggers the quick deicing which is applied instantly, the other triggers the full deicing animation.
 
 Then we have ADIRU ALIGN and ISCS in blue and amber. ISCS brings up the Toliss TSCS dialog, and then if you are in a hurry click on ADIRU ALIGN to force alignment immediately.,
 
