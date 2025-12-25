@@ -1,6 +1,6 @@
 -- TolissXKeyPadHelper
 -- Copyright (C) 2025  Ian Oliver
--- Version 1.7
+-- Version 1.9
 
 -- This program is free software: you can redistribute it and/or modify
 -- it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
 -- along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
-print("[ *** IAN TolissXKeyPadHelper - Version 1.7 - 5 October 2025" )
+print("[ *** IAN TolissXKeyPadHelper - Version 1.9 - 25 Deceber 2025" )
 print("[ *** - aircraft type is... ]" )
 print(PLANE_ICAO)
 
